@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Income Prediction</title>
+    <link rel="stylesheet" href="../static/style.css">
+	<link rel="shortcut icon" href="../static/favicon.ico">
+</head>
+<body>
+	<div class="container">
+	<h1 class="headertitle">INCOME PREDICTION</h1>
+		<form method="POST" action="/">
+			<div class="col-6">
+				<div class="row">
+					<div class="col-4" id="quesform" >
+						<p id="questext">Age</p>
+						<br>
+					</div>
+					<input class="inform" type="number" name="age"/>
+				</div>
+			
+				<div class="row">
+					<div class="col-4" id="quesform" >
+						<p id="questext">Workclass</p>
+						<br>
+					</div>
+					<!--input class="col-6" type="text" name="workclass"/-->
+					<select class="ddform" name="workclass">
+						<option disabled hidden selected="selected" value="Blank">-- Select an Option --</option>
+						<option value="Private">Private</option>
+						<option value="Self-emp-not-inc">Self Employed Unincorporated</option>
+						<option value="Self-emp-inc">Self Employed Incorporated</option>
+						<option value="Federal-gov">Federal Government</option>
+						<option value="Local-gov">Local Government</option>
+						<option value="State-gov">State Government</option>
+						<option value="Without-pay">Without Pay</option>
+						<option value="Never-worked">Never Worked</option>
+						<option value="Other">Other</option>
+					</select>
+				</div>
+					
+				<div class="row">
+					<div class="col-4" id="quesform" >
+						<p id="questext">Fnlwgt</p>
+						<br>
+					</div>
+					<input class="inform" type="number" name="fnlwgt"/>
+				</div>
+				
+				<div class="row">
+					<div class="col-4" id="quesform" >
+						<p id="questext">Education</p>
+						<br>
+					</div>
+					<!--input class="col-6" type="text" name="education"/-->
+					<select class="ddform" name="education">
+						<option disabled hidden selected="selected" value="Blank">-- Select an Option --</option>
+						<option value="Bachelors">Bachelors Degree</option>
+						<option value="Some-college">Some College</option>
+						<option value="11th">11th Grade</option>
+						<option value="HS-grad">High School Graduate</option>
+						<option value="Prof-school">Professional School</option>
+						<option value="Assoc-acdm">Clinical Data Management Association</option>
+						<option value="Assoc-voc">Vocational Association</option>
+						<option value="9th">9th Grade</option>
+						<option value="7th-8th">7th-8th Grade</option>
+						<option value="12th">12th Grade</option>
+						<option value="Masters">Masters Degree</option>
+						<option value="1st-4th">1st-4th Grade</option>
+						<option value="10th">10th Grade</option>
+						<option value="Doctorate">Doctorate Degree</option>
+						<option value="5th-6th">5th-6th Grade</option>
+						<option value="Preschool">Preschool</option>
+						<option value="Other">Other</option>
+					</select>
+				</div>
+				
+				<div class="row">
+					<div class="col-4" id="quesform" >
+						<p id="questext">Education Num</p>
+					</div>
+					<input class="inform" type="number" name="education-num"/>
+				</div>
+				
+				<div class="row">
+					<div class="col-4" id="quesform" >
+						<p id="questext">Marital Status</p>
+					</div>
+					<!--input class="col-6" type="text" name="marital-status"/-->
+					<select class="ddform" name="marital-status">
+						<option disabled hidden selected="selected" value="Blank">-- Select an Option --</option>
+						<option value="Married-civ-spouse">Married, Spouse Civilian</option>
+						<option value="Divorced">Divorced</option>
+						<option value="Never-married">Never Married</option>
+						<option value="Separated">Separated</option>
+						<option value="Widowed">Widowed</option>
+						<option value="Married-spouse-absent">Married, Spouse Absent</option>
+						<option value="Married-AF-spouse">Married, Spouse in Armed Forces</option>
+						<option value="Other">Other</option>
+					</select>
+				</div>
+				
+				<div class="row">
+					<div class="col-4" id="quesform" >
+						<p id="questext">Occupation</p>
+						<br>
+					</div>
+					<!--input class="col-6" type="text" name="occupation"/-->
+					<select class="ddform" name="occupation">
+						<option disabled hidden selected="selected" value="Blank">-- Select an Option --</option>
+						<option value="Tech-support">Tech Support</option>
+						<option value="Craft-repair">Craft Repair</option>
+						<option value="Other-service">Other Service</option>
+						<option value="Sales">Sales</option>
+						<option value="Exec-managerial">Executive Managerial</option>
+						<option value="Prof-specialty">Profession Specialty</option>
+						<option value="Handlers-cleaners">Handlers Cleaners</option>
+						<option value="Machine-op-inspct">Machine Operator Inspector</option>
+						<option value="Adm-clerical">Administrative Clerical</option>
+						<option value="Farming-fishing">Farming Fishing</option>
+						<option value="Transport-moving">Transport Moving</option>
+						<option value="Priv-house-serv">Private House Service</option>
+						<option value="Protective-serv">Protective Service</option>
+						<option value="Armed-Forces">Armed Forces</option>
+						<option value="Other">Other</option>
+					</select>
+				</div>
+			</div>
+			
+			<div class="col-6">
+				<div class="row">
+					<div class="col-4" id="quesform" >
+						<p id="questext">Relationship</p>
+						<br>
+					</div>
+					<!--input class="col-6" type="text" name="relationship"/-->
+					<select class="ddform" name="relationship">
+						<option disabled hidden selected="selected" value="Blank">-- Select an Option --</option>
+						<option value="Wife">Wife</option>
+						<option value="Own-child">Own Child</option>
+						<option value="Husband">Husband</option>
+						<option value="Not-in-family">Not in Family</option>
+						<option value="Other-relative">Other Relative</option>
+						<option value="Unmarried">Unmarried</option>
+						<option value="Other">Other</option>
+					</select>
+				</div>
+			
+				<div class="row">
+					<div class="col-4" id="quesform" >
+						<p id="questext">Race</p>
+						<br>
+					</div>
+					<!--input class="col-6" type="text" name="race"/-->
+					<select class="ddform" name="race">
+						<option disabled hidden selected="selected" value="Blank">-- Select an Option --</option>
+						<option value="White">White</option>
+						<option value="Asian-Pac-Islander">Asian Pacific Islander</option>
+						<option value="Amer-Indian-Eskimo">American Indian Eskimo</option>
+						<option value="Black">Black</option>
+						<option value="Other">Other</option>
+					</select>
+				</div>
+				
+				<div class="row">
+					<div class="col-4" id="quesform" >
+						<p id="questext">Sex</p>
+						<br>
+					</div>
+					<!--input class="col-6" type="text" name="sex"/-->
+					<select class="ddform" name="sex">
+						<option disabled hidden selected="selected" value="Blank">-- Select an Option --</option>
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+						<option value="Other">Other</option>
+					</select>
+				</div>
+				
+				<div class="row">
+					<div class="col-4" id="quesform" >
+						<p id="questext">Capital Gain</p>
+					</div>
+					<input class="inform" type="number" name="capital-gain"/>
+				</div>
+				
+				<div class="row">
+					<div class="col-4" id="quesform" >
+						<p id="questext">Capital Loss</p>
+					</div>
+					<input class="inform" type="number" name="capital-loss"/>
+				</div>
+				
+				<div class="row">
+					<div class="col-4" id="quesform" >
+						<p id="questext">Hours per Week</p>
+					</div>
+					<input class="inform" type="number" name="hours-per-week"/>
+				</div>
+				
+				<div class="row">
+					<div class="col-4" id="quesform" >
+						<p id="questext">Native Country</p>
+					</div>
+					<!--input class="col-6" type="text" name="native-country"/-->
+					<select class="ddform" name="native-country">
+						<option disabled hidden selected="selected" value="Blank">-- Select an Option --</option>
+						<option value="United-States">United States</option>
+						<option value="Cambodia">Cambodia</option>
+						<option value="England">England</option>
+						<option value="Puerto-Rico">Puerto Rico</option>
+						<option value="Canada">Canada</option>
+						<option value="Germany">Germany</option>
+						<option value="Outlying-US(Guam-USVI-etc)">Outlying US (Guam, Virgin Islands, etc)</option>
+						<option value="India">India</option>
+						<option value="Japan">Japan</option>
+						<option value="Greece">Greece</option>
+						<option value="South">South</option>
+						<option value="China">China</option>
+						<option value="Cuba">Cuba</option>
+						<option value="Iran">Iran</option>
+						<option value="Honduras">Honduras</option>
+						<option value="Philippines">Philippines</option>
+						<option value="Italy">Italy</option>
+						<option value="Poland">Poland</option>
+						<option value="Jamaica">Jamaica</option>
+						<option value="Vietnam">Vietnam</option>
+						<option value="Mexico">Mexico</option>
+						<option value="Portugal">Portugal</option>
+						<option value="Ireland">Ireland</option>
+						<option value="France">France</option>
+						<option value="Dominican-Republic">Dominican Republic</option>
+						<option value="Laos">Laos</option>
+						<option value="Ecuador">Ecuador</option>
+						<option value="Taiwan">Taiwan</option>
+						<option value="Haiti">Haiti</option>
+						<option value="Columbia">Columbia</option>
+						<option value="Hungary">Hungary</option>
+						<option value="Guatemala">Guatemala</option>
+						<option value="Nicaragua">Nicaragua</option>
+						<option value="Scotland">Scotland</option>
+						<option value="Thailand">Thailand</option>
+						<option value="Yugoslavia">Yugoslavia</option>
+						<option value="El-Salvador">El Salvador</option>
+						<option value="Trinadad&Tobago">Trinadad & Tobago</option>
+						<option value="Peru">Peru</option>
+						<option value="Hong">Hong</option>
+						<option value="Holand-Netherlands">Holand-Netherlands</option>
+						<option value="Other">Other</option>
+					</select>
+				</div>
+			</div>
+		
+			<div class="rowbutton">
+				<button class="predictbutton" type="submit"><a>PREDICT</a></button>
+			</div>
+			
+		</form>
+		
+		<hr class="line">
+        
+		{% if result  %}
+		<div class="result">
+			<p>Result: {{ result }}</p>
+		</div>
+		{% endif %}
+        
+	</div>
+
+</body>
+</html>
